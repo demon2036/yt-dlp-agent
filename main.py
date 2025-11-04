@@ -19,7 +19,7 @@ def build_command(urls, audio_only=True, use_proxy=True):
     cmd = [
         "yt-dlp",
         "-N 16",
-        "-o 'yt_dlp/%(uploader)s-%(playlist).20s/%(playlist_index)02d %(title).60s.%(ext)s'",
+        "-o 'yt_dlp/%(uploader)s/%(playlist|NA).20s/%(playlist_index)02d %(title).60s.%(ext)s'",
         "--cookies-from-browser firefox",
         "--hls-prefer-native",
     ]
